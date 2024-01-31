@@ -17,6 +17,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
   Explore-GitHub-Actions2:
     runs-on: ubuntu-latest
+    needs: Explore-GitHub-Actions
     steps:
       - name: sep 1
         uses: actions/checkout@v4
